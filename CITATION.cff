@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: "If you use BookCars in your research or projects, please cite it using the following metadata."
 title: "BookCars: A Car Rental Booking System"
 authors:
-  - name: "Akram El Assas"
+  - name: "BDTS"
 year: 2025
-repository-code: "https://github.com/aelassas/bookcars"
+repository-code: "https://github.com/PaluruSubbaNarasaiah/bookcars.git"
 license: "MIT"
 keywords:
   - car rental
@@ -17,5 +17,5 @@ keywords:
   - mongodb
   - stripe
   - paypal
-url: "https://github.com/aelassas/bookcars"
+url: "https://github.com/PaluruSubbaNarasaiah/bookcars.git"
 type: software
