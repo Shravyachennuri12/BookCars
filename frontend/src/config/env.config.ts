@@ -12,19 +12,21 @@ type Language = { code: string, countryCode: string, label: string }
 const LANGUAGES: Language[] = [
   {
     code: 'en',
-    countryCode: 'us',
-    label: 'English',
+    countryCode: 'in',
+    label: 'INDIA',
   },
-  {
-    code: 'fr',
-    countryCode: 'fr',
-    label: 'Français',
-  },
-  {
-    code: 'es',
-    countryCode: 'es',
-    label: 'Español',
-  },
+
+  // {
+  //   code: 'en',
+  //   countryCode: 'us',
+  //   label: 'English',
+  // },
+
+  // {
+  //   code: 'es',
+  //   countryCode: 'es',
+  //   label: 'Español',
+  // },
 ]
 
 type Currency = { code: string, symbol: string }
@@ -36,22 +38,24 @@ type Currency = { code: string, symbol: string }
  * @type {Currency[]}
  */
 const CURRENCIES: Currency[] = [
+
   {
-    code: 'USD',
-    symbol: '$',
+    code: 'INR',
+    symbol: '₹',
   },
-  {
-    code: 'EUR',
-    symbol: '€',
-  },
-  {
-    code: 'GBP',
-    symbol: '£',
-  },
-  {
-    code: 'AUD',
-    symbol: '$',
-  },
+
+  // {
+  //   code: 'USD',
+  //   symbol: '$',
+  // },
+  // {
+  //   code: 'GBP',
+  //   symbol: '£',
+  // },
+  // {
+  //   code: 'AUD',
+  //   symbol: '$',
+  // },
 ]
 
 const getPaymentGateway = () => {
@@ -103,7 +107,7 @@ const env = {
   LANGUAGES: LANGUAGES.map((l) => l.code),
   _LANGUAGES: LANGUAGES,
   DEFAULT_LANGUAGE: String(import.meta.env.VITE_BC_DEFAULT_LANGUAGE || 'en'),
-  BASE_CURRENCY: String(import.meta.env.VITE_BC_BASE_CURRENCY || 'USD'),
+  BASE_CURRENCY: String(import.meta.env.VITE_BC_BASE_CURRENCY || 'INR'),
   CURRENCIES,
   PAGE_SIZE: Number.parseInt(String(import.meta.env.VITE_BC_PAGE_SIZE), 10) || 30,
   CARS_PAGE_SIZE: Number.parseInt(String(import.meta.env.VITE_BC_CARS_PAGE_SIZE), 10) || 15,

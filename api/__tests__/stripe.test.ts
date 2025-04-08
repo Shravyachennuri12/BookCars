@@ -30,7 +30,7 @@ describe('POST /api/create-checkout-session', () => {
     const receiptEmail = testHelper.GetRandomEmail()
     const payload: bookcarsTypes.CreatePaymentPayload = {
       amount: 234,
-      currency: 'usd',
+      currency: 'INR',
       receiptEmail,
       customerName: 'John Doe',
       locale: 'en',
@@ -84,7 +84,7 @@ describe('POST /api/check-checkout-session/:sessionId', () => {
     const receiptEmail = testHelper.GetRandomEmail()
     const payload: bookcarsTypes.CreatePaymentPayload = {
       amount: 234,
-      currency: 'usd',
+      currency: 'INR',
       receiptEmail,
       customerName: 'John Doe',
       locale: 'en',
@@ -164,7 +164,7 @@ describe('POST /api/create-payment-intent', () => {
     const receiptEmail = testHelper.GetRandomEmail()
     const payload: bookcarsTypes.CreatePaymentPayload = {
       amount: 234,
-      currency: 'usd',
+      currency: 'INR',
       receiptEmail,
       customerName: 'John Doe',
       locale: 'en',

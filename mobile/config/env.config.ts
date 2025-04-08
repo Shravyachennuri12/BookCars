@@ -56,21 +56,21 @@ type Currency = { code: string, symbol: string }
  */
 export const CURRENCIES: Currency[] = [
   {
-    code: 'USD',
-    symbol: '$',
+    code: 'INR',
+    symbol: '₹',
   },
-  {
-    code: 'EUR',
-    symbol: '€',
-  },
-  {
-    code: 'GBP',
-    symbol: '£',
-  },
-  {
-    code: 'AUD',
-    symbol: '$',
-  },
+  // {
+  //   code: 'EUR',
+  //   symbol: '€',
+  // },
+  // {
+  //   code: 'GBP',
+  //   symbol: '£',
+  // },
+  // {
+  //   code: 'AUD',
+  //   symbol: '$',
+  // },
 ]
 
 /**
@@ -235,11 +235,11 @@ export const STRIPE_MERCHANT_IDENTIFIER: string = BC_STRIPE_MERCHANT_IDENTIFIER
 export const STRIPE_COUNTRY_CODE: string = BC_STRIPE_COUNTRY_CODE
 
 /**
- * The three-letter ISO 4217 alphabetic currency code, e.g. "USD" or "EUR" base currency. Default is USD.
+ * The three-letter ISO 4217 alphabetic currency code, e.g. "USD" or "EUR" base currency. Default is INR.
  *
  * @type {string}
  */
-export const BASE_CURRENCY: string = BC_BASE_CURRENCY || 'USD'
+export const BASE_CURRENCY: string = BC_BASE_CURRENCY || 'INR'
 
 /**
  * Deposit filter first value.

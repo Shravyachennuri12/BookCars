@@ -28,7 +28,7 @@ describe('POST /api/create-paypal-order', () => {
     // test success (create paypal order whith non existant user)
     const payload: bookcarsTypes.CreatePayPalOrderPayload = {
       amount: 234,
-      currency: 'USD',
+      currency: 'INR',
       name: 'BMW X1',
       description: 'BMW X1',
       bookingId: testHelper.GetRandromObjectIdAsString(),
@@ -81,7 +81,7 @@ describe('POST /api/check-paypal-order/:bookingId/:orderId', () => {
 
       const payload: bookcarsTypes.CreatePayPalOrderPayload = {
         amount: booking.price,
-        currency: 'USD',
+        currency: 'INR',
         name: 'BMW X1',
         description: 'BMW X1',
         bookingId: booking.id,

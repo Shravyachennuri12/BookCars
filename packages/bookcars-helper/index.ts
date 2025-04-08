@@ -220,7 +220,7 @@ export const days = (from?: Date, to?: Date) =>
  * @returns {*}
  */
 export const currencyRTL = (currencySymbol: string) => {
-  const isRTL = ['$', '£'].includes(currencySymbol)
+  const isRTL = ['₹'].includes(currencySymbol)
   return isRTL
 }
 
@@ -420,7 +420,7 @@ export const checkCurrency = (currency: string) => currencies.findIndex((c) => c
  * @param {string} language
  * @returns {boolean}
  */
-export const isFrench = (language?: string) => language === 'fr'
+export const isEnglish = (language?: string) => language === 'en'
 
 /**
  * Return all car types.

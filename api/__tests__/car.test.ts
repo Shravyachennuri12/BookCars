@@ -174,12 +174,12 @@ describe('POST /api/create-car', () => {
       {
         startDate: startDate1,
         endDate: endDate1,
-        dailyPrice: 30,
+        dailyPrice: 3000,
       },
       {
         startDate: startDate2,
         endDate: endDate2,
-        dailyPrice: 40,
+        dailyPrice: 4000,
       },
     ]
     res = await request(app)

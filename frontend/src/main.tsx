@@ -156,9 +156,9 @@ if (lang) {
   if (env.SET_LANGUAGE_FROM_IP && !storedLang) {
     const country = await IpInfoService.getCountryCode()
 
-    if (['FR', 'MA'].includes(country)) {
-      updateLang('fr')
-    } else if (['US', 'GB', 'AU'].includes(country)) {
+    if (['in', 'MA'].includes(country)) {
+      updateLang('en')
+    } else if (['in', 'US', 'AU'].includes(country)) {
       updateLang('en')
     } else {
       updateLang(env.DEFAULT_LANGUAGE)
@@ -167,8 +167,8 @@ if (lang) {
 }
 
 language = UserService.getLanguage()
-const isFr = language === 'fr'
-const isEs = language === 'es'
+const isFr = language === 'en'
+// const isEs = language === 'es'
 
 const theme = createTheme(
   {

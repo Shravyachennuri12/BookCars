@@ -83,7 +83,7 @@ beforeAll(async () => {
   DRIVER1_ID = driver1.id
 
   // create a location
-  LOCATION_ID = await testHelper.createLocation('Location 1 EN', 'Location 1 FR')
+  LOCATION_ID = await testHelper.createLocation('Location 1 in', 'Location 1 ')
 
   // create car
   const payload: bookcarsTypes.CreateCarPayload = {
@@ -405,7 +405,7 @@ describe('POST /api/checkout', () => {
     const receiptEmail = testHelper.GetRandomEmail()
     const paymentIntentPayload: bookcarsTypes.CreatePaymentPayload = {
       amount: 234,
-      currency: 'usd',
+      currency: 'INR',
       receiptEmail,
       customerName: 'John Doe',
       description: 'BookCars Testing Service',

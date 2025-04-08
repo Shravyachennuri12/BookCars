@@ -61,12 +61,12 @@ const Home = () => {
   const [ranges, setRanges] = useState([bookcarsTypes.CarRange.Mini, bookcarsTypes.CarRange.Midi])
   const [openRangeSearchFormDialog, setOpenRangeSearchFormDialog] = useState(false)
   const [videoLoaded, setVideoLoaded] = useState(false)
-  const [miniPricePhr, setMiniPricePhr] = useState(2.5)
-  const [miniPricePday, setMiniPricePday] = useState(40)
-  const [midiPricePhr, setMidiPricePhr] = useState(3.5)
-  const [midiPricePday, setMidiPricePday] = useState(50)
-  const [maxiPricePhr, setMaxiPricePhr] = useState(4.5)
-  const [maxiPricePday, setMaxiPricePday] = useState(80)
+  const [miniPricePhr, setMiniPricePhr] = useState(1000)
+  const [miniPricePday, setMiniPricePday] = useState(3000)
+  const [midiPricePhr, setMidiPricePhr] = useState(2500)
+  const [midiPricePday, setMidiPricePday] = useState(7000)
+  const [maxiPricePhr, setMaxiPricePhr] = useState(3000)
+  const [maxiPricePday, setMaxiPricePday] = useState(8000)
 
   useEffect(() => {
     const init = async () => {
@@ -353,11 +353,11 @@ const Home = () => {
                 <ul>
                   <li>
                     <span className="price">{bookcarsHelper.formatPrice(miniPricePhr, commonStrings.CURRENCY, language)}</span>
-                    <span className="unit"> · phr</span>
+                    <span className="unit"> / phr</span>
                   </li>
                   <li>
                     <span className="price">{bookcarsHelper.formatPrice(miniPricePday, commonStrings.CURRENCY, language)}</span>
-                    <span className="unit"> · pday</span>
+                    <span className="unit"> / pday</span>
                   </li>
                 </ul>
               </div>
@@ -402,11 +402,11 @@ const Home = () => {
                 <ul>
                   <li>
                     <span className="price">{bookcarsHelper.formatPrice(midiPricePhr, commonStrings.CURRENCY, language)}</span>
-                    <span className="unit"> · phr</span>
+                    <span className="unit"> / phr</span>
                   </li>
                   <li>
                     <span className="price">{bookcarsHelper.formatPrice(midiPricePday, commonStrings.CURRENCY, language)}</span>
-                    <span className="unit"> · pday</span>
+                    <span className="unit"> / pday</span>
                   </li>
                 </ul>
               </div>
@@ -450,11 +450,11 @@ const Home = () => {
                 <ul>
                   <li>
                     <span className="price">{bookcarsHelper.formatPrice(maxiPricePhr, commonStrings.CURRENCY, language)}</span>
-                    <span className="unit"> · phr</span>
+                    <span className="unit"> / phr</span>
                   </li>
                   <li>
                     <span className="price">{bookcarsHelper.formatPrice(maxiPricePday, commonStrings.CURRENCY, language)}</span>
-                    <span className="unit"> · pday</span>
+                    <span className="unit"> / pday</span>
                   </li>
                 </ul>
               </div>

@@ -30,6 +30,7 @@ import * as env from '@/config/env.config'
 import Backdrop from '@/components/Backdrop'
 import Indicator from '@/components/Indicator'
 import DriverLicense from '@/components/DriverLicense'
+import { en } from '@/lang/en'
 
 const CheckoutScreen = ({ navigation, route }: NativeStackScreenProps<StackParams, 'Checkout'>) => {
   const isFocused = useIsFocused()
@@ -122,7 +123,7 @@ const CheckoutScreen = ({ navigation, route }: NativeStackScreenProps<StackParam
       const _language = await UserService.getLanguage()
       i18n.locale = _language
       setLanguage(_language)
-      setLoacle(_language === 'fr' ? fr : enUS)
+      setLoacle(_language === 'en' ? en : enUS)
 
       setAuthenticated(false)
       setUser(null)
@@ -785,8 +786,8 @@ const CheckoutScreen = ({ navigation, route }: NativeStackScreenProps<StackParam
 
   const iconSize = 18
   const iconColor = '#000'
-  const _fr = bookcarsHelper.isFrench(language)
-  const _format = _fr ? 'eee d LLL yyyy kk:mm' : 'eee, d LLL yyyy, p'
+  const _en = bookcarsHelper.isEnglish(language)
+  const _format = _en ? 'eee d LLL yyyy kk:mm' : 'eee, d LLL yyyy, p'
   const days = bookcarsHelper.days(from, to)
 
   return (

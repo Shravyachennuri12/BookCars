@@ -66,7 +66,7 @@ export const getCurrency = async () => {
  */
 export const getCurrencySymbol = async () => {
   const currency = await getCurrency()
-  const currencySymbol = env.CURRENCIES.find((c) => c.code === currency)?.symbol || '$'
+  const currencySymbol = env.CURRENCIES.find((c) => c.code === currency)?.symbol || '₹'
   return currencySymbol
 }
 

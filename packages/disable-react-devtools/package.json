@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "disable-react-devtools": "file:",
     "rimraf": "^5.0.1",
     "typescript": "^5.2.2"
   }
