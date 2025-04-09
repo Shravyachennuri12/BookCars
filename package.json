@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Shravyachennuri12/BookCars/issues"
   },
-  "homepage": "https://github.com/Shravyachennuri12/BookCars#readme"
+  "homepage": "https://github.com/Shravyachennuri12/BookCars#readme",
+  "dependencies": {
+    "yarn": "^1.22.22"
+  }
 }
