@@ -5,11 +5,15 @@
   "main": "index.js",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "frontend"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build --workspace=packages/bookcars-types"
+    "build": "npm run build --workspace=packages/bookcars-types && npm run build:frontend",
+    "build-types": "npm run build --workspace=packages/bookcars-types",
+    "build:frontend": "cd frontend && npm run build",
+    "build:all": "npm run build --workspaces"
   },
   "repository": {
     "type": "git",
