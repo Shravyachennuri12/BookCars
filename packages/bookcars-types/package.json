@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"],
   "scripts": {
     "build": "rimraf ./tsconfig.tsbuildinfo ./index.js ./index.d.ts && tsc --build --verbose"
   },
