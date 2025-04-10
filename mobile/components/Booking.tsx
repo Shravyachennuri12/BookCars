@@ -42,7 +42,7 @@ const Booking = ({
   today.setSeconds(0)
   today.setMilliseconds(0)
 
-  const _fr = bookcarsHelper.isFrench(language)
+  const _fr = bookcarsHelper.isEnglish(language)
   const _format = _fr ? 'eee d LLL yyyy kk:mm' : 'eee, d LLL yyyy, p'
 
   const [loading, setLoading] = useState(true)

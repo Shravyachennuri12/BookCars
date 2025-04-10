@@ -44,7 +44,7 @@ const Car = ({
   navigation,
   hidePrice
 }: CarProps) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   const [days, setDays] = useState<number>()
   const [loading, setLoading] = useState(true)

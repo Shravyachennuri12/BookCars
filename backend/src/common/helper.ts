@@ -261,7 +261,7 @@ export const getMileage = (mileage: number, language: string) => {
  * @returns {string}
  */
 export const getMileageTooltip = (mileage: number, language: string) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (mileage === -1) {
     return `${strings.MILEAGE} ${strings.UNLIMITED.toLocaleLowerCase()}.`
@@ -277,7 +277,7 @@ export const getMileageTooltip = (mileage: number, language: string) => {
  * @returns {string}
  */
 export const getAdditionalDriver = (additionalDriver: number, language: string) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (additionalDriver === -1) {
     return `${strings.ADDITIONAL_DRIVER}${fr ? ' : ' : ': '}${strings.UNAVAILABLE}`
@@ -295,7 +295,7 @@ export const getAdditionalDriver = (additionalDriver: number, language: string) 
  * @returns {string}
  */
 export const getFullInsurance = (fullInsurance: number, language: string) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (fullInsurance === -1) {
     return `${strings.FULL_INSURANCE}${fr ? ' : ' : ': '}${strings.UNAVAILABLE}`
@@ -313,7 +313,7 @@ export const getFullInsurance = (fullInsurance: number, language: string) => {
  * @returns {string}
  */
 export const getCollisionDamageWaiver = (collisionDamageWaiver: number, language: string) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (collisionDamageWaiver === -1) {
     return `${strings.COLLISION_DAMAGE_WAVER}${fr ? ' : ' : ': '}${strings.UNAVAILABLE}`
@@ -331,7 +331,7 @@ export const getCollisionDamageWaiver = (collisionDamageWaiver: number, language
  * @returns {string}
  */
 export const getTheftProtection = (theftProtection: number, language: string) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (theftProtection === -1) {
     return `${strings.THEFT_PROTECTION}${fr ? ' : ' : ': '}${strings.UNAVAILABLE}`
@@ -349,7 +349,7 @@ export const getTheftProtection = (theftProtection: number, language: string) =>
  * @returns {string}
  */
 export const getAmendments = (amendments: number, language: string) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (amendments === -1) {
     return `${strings.AMENDMENTS}${fr ? ' : ' : ': '}${strings.UNAVAILABLE}${fr ? 's' : ''}`
@@ -367,7 +367,7 @@ export const getAmendments = (amendments: number, language: string) => {
  * @returns {string}
  */
 export const getCancellation = (cancellation: number, language: string) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (cancellation === -1) {
     return `${strings.CANCELLATION}${fr ? ' : ' : ': '}${strings.UNAVAILABLE}`
@@ -578,7 +578,7 @@ export const getDaysShort = (days: number) => `${days} ${strings.PRICE_DAYS_PART
  * @returns {string}
  */
 export const getCancellationOption = (cancellation: number, language: string, hidePlus: boolean) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (cancellation === -1) {
     return strings.UNAVAILABLE
@@ -597,7 +597,7 @@ export const getCancellationOption = (cancellation: number, language: string, hi
  * @returns {string}
  */
 export const getAmendmentsOption = (amendments: number, language: string, hidePlus: boolean) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (amendments === -1) {
     return `${strings.UNAVAILABLE}${fr ? 's' : ''}`
@@ -617,7 +617,7 @@ export const getAmendmentsOption = (amendments: number, language: string, hidePl
  * @returns {string}
  */
 export const getCollisionDamageWaiverOption = (collisionDamageWaiver: number, days: number, language: string, hidePlus: boolean) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (collisionDamageWaiver === -1) {
     return strings.UNAVAILABLE
@@ -637,7 +637,7 @@ export const getCollisionDamageWaiverOption = (collisionDamageWaiver: number, da
  * @returns {string}
  */
 export const getTheftProtectionOption = (theftProtection: number, days: number, language: string, hidePlus: boolean) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (theftProtection === -1) {
     return strings.UNAVAILABLE
@@ -657,7 +657,7 @@ export const getTheftProtectionOption = (theftProtection: number, days: number, 
  * @returns {string}
  */
 export const getFullInsuranceOption = (fullInsurance: number, days: number, language: string, hidePlus: boolean) => {
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   if (fullInsurance === -1) {
     return strings.UNAVAILABLE

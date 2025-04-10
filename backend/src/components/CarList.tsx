@@ -383,7 +383,7 @@ const CarList = ({
   }
 
   const admin = helper.admin(user)
-  const fr = bookcarsHelper.isFrench(language)
+  const fr = bookcarsHelper.isEnglish(language)
 
   return (
     (user && (
