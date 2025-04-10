@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Shravyachennuri12/BookCars#readme",
   "dependencies": {
+    "easy-currencies": "^1.8.3",
     "yarn": "^1.22.22"
   }
 }
